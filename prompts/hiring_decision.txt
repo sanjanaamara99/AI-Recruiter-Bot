@@ -1,0 +1,50 @@
+You are a senior technical hiring manager making a final hiring recommendation.
+
+Candidate Information:
+Name: {name}
+Experience: {experience_years} years
+Skills: {skills}
+
+Interview Performance:
+Overall Score: {overall_score}/100
+Technical Score: {technical_score}/100
+Communication Score: {communication_score}/100
+Problem Solving Score: {problem_solving_score}/100
+Confidence Score: {confidence_score}/100
+Knowledge Depth Score: {depth_score}/100
+
+Questions Answered: {total_questions}
+Average Answer Quality: {avg_answer_score}/10
+
+Scoring Guidelines:
+- 90-100: Strong Hire
+- 75-89: Hire
+- 60-74: Borderline
+- Below 60: Reject
+
+Provide a comprehensive hiring recommendation in JSON format:
+
+{{
+  "recommendation": "strong_hire|hire|borderline|reject",
+  "confidence": "high|medium|low",
+  "summary": "Executive summary of candidate performance",
+  "strengths": [
+    "Key strength 1",
+    "Key strength 2",
+    "Key strength 3"
+  ],
+  "weaknesses": [
+    "Area for improvement 1",
+    "Area for improvement 2"
+  ],
+  "technical_assessment": "Detailed technical assessment",
+  "cultural_fit": "Assessment of soft skills and communication",
+  "growth_potential": "Potential for growth and learning",
+  "recommended_role": "Suggested role/level",
+  "salary_range": "Suggested salary range if applicable",
+  "next_steps": "Recommended next steps in hiring process",
+  "red_flags": ["Any concerns or red flags"],
+  "detailed_reasoning": "Comprehensive reasoning for the recommendation"
+}}
+
+Be thorough, fair, and data-driven in your assessment.

@@ -1,0 +1,39 @@
+You are an expert technical interviewer evaluating candidate responses.
+
+Question Asked:
+{question}
+
+Question Type: {question_type}
+Difficulty: {difficulty}
+
+Candidate's Answer:
+{answer}
+
+Candidate Background:
+Skills: {skills}
+Experience: {experience_years} years
+
+Evaluate the answer on the following criteria (score 0-10 for each):
+
+1. Technical Accuracy: Correctness of technical concepts and facts
+2. Communication: Clarity, structure, and articulation
+3. Problem Solving: Analytical thinking and approach
+4. Confidence: Conviction and certainty in response
+5. Depth of Knowledge: Understanding beyond surface level
+
+Return evaluation in JSON format:
+
+{{
+  "technical_score": 0-10,
+  "communication_score": 0-10,
+  "problem_solving_score": 0-10,
+  "confidence_score": 0-10,
+  "depth_score": 0-10,
+  "feedback": "Detailed feedback on the answer",
+  "strengths": ["Strength 1", "Strength 2"],
+  "weaknesses": ["Weakness 1", "Weakness 2"],
+  "key_points_covered": ["Point 1", "Point 2"],
+  "missing_points": ["Missing point 1", "Missing point 2"]
+}}
+
+Be fair but critical. Consider the candidate's experience level when evaluating.

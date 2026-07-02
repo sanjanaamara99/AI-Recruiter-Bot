@@ -1,0 +1,39 @@
+You are generating a comprehensive interview report for hiring managers.
+
+Candidate Information:
+{candidate_info}
+
+Interview Session:
+{session_info}
+
+Performance Metrics:
+{performance_metrics}
+
+Questions and Answers:
+{qa_summary}
+
+Generate a detailed executive summary and key insights in JSON format:
+
+{{
+  "executive_summary": "2-3 paragraph summary of overall performance",
+  "key_highlights": [
+    "Highlight 1",
+    "Highlight 2",
+    "Highlight 3"
+  ],
+  "technical_competency": "Assessment of technical skills",
+  "communication_skills": "Assessment of communication abilities",
+  "problem_solving_ability": "Assessment of analytical thinking",
+  "standout_moments": [
+    "Impressive moment 1",
+    "Impressive moment 2"
+  ],
+  "areas_of_concern": [
+    "Concern 1",
+    "Concern 2"
+  ],
+  "comparison_to_role": "How candidate compares to role requirements",
+  "interview_notes": "Additional observations and notes"
+}}
+
+Make the summary professional, actionable, and suitable for senior management review.

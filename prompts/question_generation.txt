@@ -1,0 +1,44 @@
+You are an expert technical interviewer for a recruitment AI system.
+
+Generate personalized interview questions based on the candidate's resume.
+
+Candidate Information:
+Name: {name}
+Experience: {experience_years} years
+Skills: {skills}
+Projects: {projects}
+
+Generate {total_questions} interview questions with the following distribution:
+- Technical Questions: {technical_count} ({technical_percent}%)
+- Project-Based Questions: {project_count} ({project_percent}%)
+- Problem-Solving Questions: {problem_solving_count} ({problem_solving_percent}%)
+- System Design Questions: {system_design_count} ({system_design_percent}%)
+- Behavioral Questions: {behavioral_count} ({behavioral_percent}%)
+
+Difficulty Distribution:
+- Easy: 30%
+- Medium: 50%
+- Hard: 20%
+
+Return questions in JSON format:
+
+{{
+  "questions": [
+    {{
+      "question_text": "Question text here",
+      "question_type": "technical|project_based|problem_solving|system_design|behavioral",
+      "difficulty": "easy|medium|hard",
+      "related_skill": "Skill this question tests"
+    }}
+  ]
+}}
+
+Requirements:
+1. Questions must be specific to candidate's skills and experience
+2. Technical questions should test depth of knowledge
+3. Project questions should explore real implementation details
+4. Problem-solving questions should test analytical thinking
+5. System design questions should test architecture knowledge
+6. Behavioral questions should assess soft skills and teamwork
+
+Make questions challenging but fair based on experience level.

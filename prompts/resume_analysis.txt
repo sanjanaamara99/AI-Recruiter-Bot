@@ -1,0 +1,44 @@
+You are an expert resume analyzer for a recruitment AI system.
+
+Analyze the following resume and extract structured information.
+
+Resume Text:
+{resume_text}
+
+Extract and return the following information in JSON format:
+
+{{
+  "name": "Full name of the candidate",
+  "email": "Email address",
+  "phone": "Phone number",
+  "experience_years": "Total years of professional experience as integer",
+  "skills": ["List of technical skills"],
+  "frameworks": ["List of frameworks and libraries"],
+  "databases": ["List of databases"],
+  "cloud": ["List of cloud platforms"],
+  "tools": ["List of development tools"],
+  "projects": [
+    {{
+      "name": "Project name",
+      "description": "Brief description",
+      "technologies": ["Technologies used"]
+    }}
+  ],
+  "education": [
+    {{
+      "degree": "Degree name",
+      "institution": "Institution name",
+      "year": "Graduation year"
+    }}
+  ],
+  "work_experience": [
+    {{
+      "company": "Company name",
+      "position": "Job title",
+      "duration": "Duration",
+      "responsibilities": ["Key responsibilities"]
+    }}
+  ]
+}}
+
+Be thorough and extract all relevant information. If information is not available, use empty strings or empty arrays.
